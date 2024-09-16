@@ -81,11 +81,11 @@ export default function WebinarSignup() {
                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
                   <div className="flex items-center gap-2">
                     <CalendarIcon className="w-4 h-4 text-blue-500" />
-                    <span className="text-sm">July 15, 2024</span>
+                    <span className="text-sm">Oct 13, 2024</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <ClockIcon className="w-4 h-4 text-blue-500" />
-                    <span className="text-sm">4:00 PM - 5:30 PM EST</span>
+                    <span className="text-sm">4:00 PM - 5:30 PM CST</span>
                   </div>
                 </div>
                 <ul className="grid gap-2 py-4">
