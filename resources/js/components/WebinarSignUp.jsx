@@ -30,14 +30,13 @@ export default function WebinarSignup() {
     }));
   };
 
-  // Handle form submission
   const handleSubmit = async (e) => {
     e.preventDefault();
     setSubmitStatus('submitting');
     try {
-      const response = await axios.post('/api/webinar-signup', formData); // POST to Laravel backend
+      const response = await axios.post('/api/webinar-signup', formData);
       setSubmitStatus('success');
-      setFormData({ name: '', email: '', grade: '' }); // Reset the form after success
+      setFormData({ name: '', email: '', grade: '' });
     } catch (error) {
       setSubmitStatus('error');
       console.error('Error during submission:', error);
@@ -53,7 +52,7 @@ export default function WebinarSignup() {
       <header className="px-4 lg:px-6 h-14 flex items-center bg-white shadow-sm relative z-10">
         <a className="flex items-center justify-center" href="#">
           <CodeIcon className="h-6 w-6 text-blue-500" />
-          <span className="ml-2 font-bold text-lg">WebWizards</span>
+          <span className="ml-2 font-bold text-lg">Between Two Divs</span>
         </a>
         <button className="ml-auto md:hidden" onClick={toggleMobileMenu}>
           {mobileMenuOpen ? <X /> : <Menu />}
@@ -106,20 +105,18 @@ export default function WebinarSignup() {
 
               <div className="flex items-center">
                 <div className="w-full relative" style={{ paddingTop: '56.25%' }}>
-                  <video
+                  <iframe
                     className="absolute top-0 left-0 w-full h-full rounded-lg"
-                    controls
-                    poster="/placeholder.svg?height=400&width=600"
-                  >
-                    <source src="/path-to-your-video.mp4" type="video/mp4" />
-                    <track kind="captions" src="/path-to-captions.vtt" label="English" />
-                    Your browser does not support the video tag.
-                  </video>
+                    src="https://www.youtube.com/embed/yyETsxr2RxM?si=Aiu8ce8Da-eVknGr" // Replace VIDEO_ID with your actual YouTube video ID
+                    title="Webinar Introduction"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  ></iframe>
                 </div>
               </div>
             </div>
 
-            {/* Sign-up form */}
             <div className="w-full max-w-2xl mx-auto">
               <div className="flex flex-col gap-4 p-6 md:p-8 bg-white rounded-3xl shadow-lg border border-gray-200">
                 <div className="space-y-2">
@@ -190,7 +187,7 @@ export default function WebinarSignup() {
       </main>
 
       <footer className="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t bg-white">
-        <p className="text-xs text-gray-500 dark:text-gray-400">© 2024 WebWizards. All rights reserved.</p>
+        <p className="text-xs text-gray-500 dark:text-gray-400">© 2024 Between Two Divs. All rights reserved.</p>
         <nav className="sm:ml-auto flex gap-4 sm:gap-6">
           <a className="text-xs hover:underline underline-offset-4" href="#">Terms of Service</a>
           <a className="text-xs hover:underline underline-offset-4" href="#">Privacy Policy</a>
