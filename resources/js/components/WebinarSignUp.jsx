@@ -58,9 +58,9 @@ export default function WebinarSignup() {
           {mobileMenuOpen ? <X /> : <Menu />}
         </button>
         <nav className={`${mobileMenuOpen ? 'flex' : 'hidden'} md:flex absolute md:relative top-full left-0 right-0 bg-white md:top-auto md:left-auto md:right-auto flex-col md:flex-row items-start md:items-center ml-auto md:gap-6 p-4 md:p-0 shadow-md md:shadow-none`}>
-          <a className="text-sm font-medium hover:text-blue-500 transition-colors py-2 md:py-0" href="#">Home</a>
-          <a className="text-sm font-medium hover:text-blue-500 transition-colors py-2 md:py-0" href="#">About</a>
-          <a className="text-sm font-medium hover:text-blue-500 transition-colors py-2 md:py-0" href="#">Contact</a>
+          <a className="text-sm font-medium hover:text-blue-500 transition-colors py-2 md:py-0" href="https://webinar.betweentwodivs.com/">Home</a>
+          <a className="text-sm font-medium hover:text-blue-500 transition-colors py-2 md:py-0" href="https://betweentwodivs.com/about/">About</a>
+          <a className="text-sm font-medium hover:text-blue-500 transition-colors py-2 md:py-0" href="https://betweentwodivs.com/contact/">Contact</a>
         </nav>
       </header>
 
